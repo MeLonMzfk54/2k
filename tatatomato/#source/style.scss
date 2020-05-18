@@ -196,9 +196,131 @@ $roboto: 'Roboto Slab', serif;
     .slider{
         &__item{
             background: #343434;
-            height: 400px;
+            //height: 400px;
         }
     }
    
+}
+
+.catalog {
+    padding: 70px 0px;
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        font-family: $roboto;
+    }
+    h3 {
+        text-align: left;
+        font-size: 30px;
+        font-family: $roboto;
+        margin-top: 20px;
+    }
+
+    .cards {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+      
+        .card{
+            padding: 20px 18px;
+            width: 251px;
+            height: 463px;
+            background: #fff;
+
+            img {
+                border-radius: 50%;
+                width: 215px;
+                height: 215px;
+            }
+
+            
+            &__container{
+                width: 215px;
+                height: 203px;
+
+                .card__name {
+                    height: 70px;
+                    padding-top: 20px;
+                    text-align: center;
+                    font-size: 24px;
+                    font-family: $roboto;
+                }
+                .info{
+                    height: 100px;
+                    padding-top: 5px;
+                    text-align: left;
+                    font-size: 14px;
+                    font-family: $roboto;
+                }
+            }
+
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+
+                .money{
+                    text-align: center;
+                    width: 60px;
+                    font-size: 18px;
+                    font-family: $roboto;
+                    color: #000;
+                    line-height: 39px;
+                }
+                    .select_button {
+                        color: red;
+                        height: 40px;
+                        background-color: #fff;
+                        font-size: 14px;
+                        font-family: $roboto;
+                        padding: 0px 14px;
+                        border: 1px solid red;
+                        border-radius: 20.5px;
+                        text-decoration: none;
+                        line-height: 39px;
+                    }
+                    .select_button:hover {
+                        box-shadow: 0 0 10px red;
+                    }
+                    
+            }
+        }
+    }
+
+    @media screen and (max-width: 1004px) {
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
+        }
+    }
+
+    @media screen and (max-width: 753px) {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
+          }
+          h3 {
+              text-align: center;
+          }
+    }
+
+    @media screen and (max-width: 502px) {
+        .cards {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
+          }
+    }
 }
 
