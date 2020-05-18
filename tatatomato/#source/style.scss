@@ -12,6 +12,32 @@ $roboto: 'Roboto Slab', serif;
 
 .header{
     font-family: $roboto;
+    .logo{
+        &__text{
+                visibility: hidden;
+            }
+        &__img{
+            position: absolute;
+            left: 5%;
+            top: 2%;
+            width: 110px;
+            height: 110px;
+            z-index: 2;
+        }
+        @media(max-width:1494px){
+            &__img{
+            left: 4%;
+            top: 2%;
+            
+        }
+        }
+        @media(max-width:1426px){
+            &__img{
+                margin-right: 30px;
+                left: 0;
+        }
+        }
+    }
     &__top{
        background-color: #F7F7F7;
         padding-top: 15px;
@@ -115,14 +141,59 @@ $roboto: 'Roboto Slab', serif;
             }
         }
     }
-    @media(max-width:436px){
+    @media(max-width:1342px){
+            .menu{
+                padding-left: 20px;
+            }
+        &__block{
+            padding-left: 20px;
+        }
+        }
+    @media(max-width:1302px){
+            .menu{
+                padding-left: 60px;
+            }
+        &__block{
+            padding-left: 60px;
+        }
+        }
+    @media(max-width:1222px){
+            .menu{
+                padding-left: 90px;
+            }
+        &__block{
+            padding-left: 100px;
+        }
+        }
+    @media(max-width:532px){
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 70px;
+            &__text{
+                visibility: visible;
+                font-size: 17px;
+                text-transform: uppercase;
+            }
+        &__img{
+            position: inherit;
+            width: 50px;
+            height: 50px;
+            z-index: 2;
+        }
+        }
         .burger{
+            position: absolute;
+            right: 0;
+            top: 5%;
             visibility: visible;
             display: flex;
             justify-content: flex-end;
-            padding-right: 10px;
+            padding-right: 15px;
         }
         .menu{
+            padding-left: 0px;
             position: absolute;
             top: -500px;
         }
@@ -131,16 +202,17 @@ $roboto: 'Roboto Slab', serif;
             display: none;
         }
         &__block{
+            padding-left: 0px;
             position: absolute;
             top: -500px;
             flex-direction: column;
         }
         .visible{
             transition: .3s all ease;
-            top: 0;
+            top: 20px;
         }
         .visible__menu{
-            top: 100px;
+            top: 120px;
         }
         .visible__bottom{
             display: block;
@@ -185,27 +257,64 @@ $roboto: 'Roboto Slab', serif;
             }
         }
     }
+    @media(max-width:458px){
+        .logo{
+            &__text{
+                font-size: 15px;
+            }
+        &__img{
+            width: 45px;
+            height: 45px;
+        }
+        }
+    }
     @media(max-width:321px){
         .menu__item:first-child{
             padding-left: 0px;
         }
     }
+    .logo__hidden{
+        visibility: hidden;
+        .logo__text{
+            font-size: 0px;
+        }
+    }
 }
 
 .slickSlider{
+    background: #F7F7F7;
     .slider{
         &__item{
             background: #343434;
-            //height: 400px;
+            img{
+                width: 100%;
+                height: 45%;
+            }
+        }
+        @media(max-width:642px){
+            &__item{
+                img{
+                    height:150px;
+                }
+            }
+        }
+        @media(max-width:532px){
+            &__item{
+                img{
+                    height: 100%;
+                }
+            }
         }
     }
-   
+    @media(max-width:532px){
+        &{
+            padding-top: 25px;
+        }
+    }
 }
 
 .catalog {
     padding: 70px 0px;
-    margin: 0 auto;
-    max-width: 1170px;
     width: 100%;
     h2 {
         text-align: center;
@@ -232,6 +341,11 @@ $roboto: 'Roboto Slab', serif;
             width: 251px;
             height: 463px;
             background: #fff;
+            
+            &__information{
+                display: flex;
+                flex-direction: column;
+            }
 
             img {
                 border-radius: 50%;
