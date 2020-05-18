@@ -254,7 +254,6 @@ img {
 
 .slickSlider .slider__item {
   background: #343434;
-  height: 400px;
 }
 
 .catalog {
@@ -287,6 +286,11 @@ img {
   width: 251px;
   height: 463px;
   background: #fff;
+}
+.catalog .cards .card img {
+  border-radius: 50%;
+  width: 215px;
+  height: 215px;
 }
 .catalog .cards .card__container {
   width: 215px;

@@ -196,7 +196,7 @@ $roboto: 'Roboto Slab', serif;
     .slider{
         &__item{
             background: #343434;
-            height: 400px;
+            //height: 400px;
         }
     }
    
@@ -233,6 +233,11 @@ $roboto: 'Roboto Slab', serif;
             height: 463px;
             background: #fff;
 
+            img {
+                border-radius: 50%;
+                width: 215px;
+                height: 215px;
+            }
 
             
             &__container{
