@@ -10,13 +10,23 @@
 <link rel="stylesheet" href="fonts/icomoon-v2.0/ie7/ie7.css">
 <!--ШРИФТ РОБОТО-->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+                    <!--   ИКОНКА НА ВКЛАДКЕ     -->
+<link rel="shortcut icon" href="img/header/logo.png" type="image/png">
 <!--SLICK CSS-->
 <link rel="stylesheet" href="assets/slick-1.8.11/slick-1.8.1/slick/slick.css">
 <link rel="stylesheet" href="assets/slick-1.8.11/slick-1.8.1/slick/slick-theme.css">
 </head>
 <body>
+  <!-- СТРЕЛКА ПРОКРУТКИ СТРАНИЦЫ ВВЕРХ-->
+  <div id="toTop">
+      <div class="arrow">
+        <span class="arrow__left"></span>
+        <span class="arrow__right"></span>
+     </div>
+  </div>
+  <!--Wrapper-->
    <div class="wrapper">
+   <!--Шапка страницы-->
     <header class="header">
        <div class="header__top">
             <div class="container">
@@ -48,8 +58,8 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu__item">
-                    <a class="menu__link" href="#menu">Меню</a>
-                    <ul>
+                    <a class="menu__link" href="#1">Меню</a>
+                    <ul class="submenu">
                        <div>
                         <li><a href="#snack">Закуски</a></li>
                         <li><a href="#special">Special</a></li>
@@ -60,16 +70,17 @@
                         <li><a href="#pizza">Пицца</a></li>
                         <li><a href="#paste">Паста</a></li>
                         <li><a href="#dessert">Десерты</a></li>
-                        <li><a href="#drinks">Напитки</a></li>
+                        <li><a href="#drinks" class="inactive"><del>Напитки</del></a></li>
                         </div>
                     </ul>
                     </li>
                     <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                    <li class="menu__item"><a class="menu__link" id="toDown" href="#contacts">Контакты</a></li>
                 </ul>
             </div>
         </div>
     </header>
+    <!--Слайдер-->
     <section class="slickSlider">
     <div class="slider">
         <div class="slider__item">
@@ -83,6 +94,7 @@
         </div>
     </div>
     </section>
+    <!--Каталог-->
     <section class="catalog">
        <div class="container">
         <h2 id="menu">МЕНЮ</h2>
@@ -97,7 +109,7 @@
                     </div>
                     <div class="card__info">
                         <div class="money">150 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button" id="snack-1">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -108,7 +120,7 @@
                     <p class="info">Тар-тар из филе лосося, цукини, оливкового масла и соуса крем-бальзамик</p>
                     <div class="card__info">
                         <div class="money">330 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -122,7 +134,7 @@
                     <p class="info">Традиционная закрытая пицца с Моцареллой, шампиньонами, курицей и базиликом</p>
                     <div class="card__info">
                         <div class="money">380 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -136,7 +148,7 @@
                     <p class="info">Авторский салат с рукколой, манго, томатами черри, сыром Моцареллой и заправкой «Манго-имбирь»</p>
                     <div class="card__info">
                         <div class="money">250 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -147,7 +159,7 @@
                     <p class="info">Итальянский салат с помидорами черри, сушёными томатами, оливковым маслом и чесночной пастой</p>
                     <div class="card__info">
                         <div class="money">280 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -158,7 +170,7 @@
                     <p class="info">Традиционный салат Цезарь с тигровыми креветками и соусом «Песто»</p>
                     <div class="card__info">
                         <div class="money">420 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -169,7 +181,7 @@
                     <p class="info">Традиционный салат Цезарь с обжаренным филе лосося, соусом «Песто» и соусом «Цезарь»</p>
                     <div class="card__info">
                         <div class="money">420 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -183,7 +195,7 @@
                     <p class="info">Классический итальянский овощной суп</p>
                     <div class="card__info">
                         <div class="money">240 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -194,7 +206,7 @@
                     <p class="info">Итальянский томатный суп с добавлением базилика, перца Чили и оливкового масла</p>
                     <div class="card__info">
                         <div class="money">240 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -205,7 +217,7 @@
                     <p class="info">Классическая итальянская лепешка с оливковым маслом, соусом «Песто» и сыром Пармезан</p>
                     <div class="card__info">
                         <div class="money">180 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -216,7 +228,7 @@
                     <p class="info">Итальянская лепешка с томатным соусом и сыром Пармезан</p>
                     <div class="card__info">
                         <div class="money">180 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -230,7 +242,7 @@
                     <p class="info">Фирменная итальянская пицца с сыром Моцарелла и томатами</p>
                     <div class="card__info">
                         <div class="money">450 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button" id="pizza-1">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -241,7 +253,7 @@
                     <p class="info">Классическая итальянская пицца четыре сыра: Моцарелла, Чеддер, Горгонзола, Пармезан. С добавлением мендаля</p>
                     <div class="card__info">
                         <div class="money">470 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -252,7 +264,7 @@
                     <p class="info">Традиционная итальянская пицца с томатным соусом и молочной Моцареллой</p>
                     <div class="card__info">
                         <div class="money">320 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -263,7 +275,7 @@
                     <p class="info">Традиционная итальянская пицца с пепперони и сыром Моцарелла</p>
                     <div class="card__info">
                         <div class="money">380 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -274,7 +286,7 @@
                     <p class="info">Острая итальянская пицца с Моцареллой, запечёным куриным филе, ананасами, беконом и перцем Чили</p>
                     <div class="card__info">
                         <div class="money">350 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -285,7 +297,7 @@
                     <p class="info">Итальянская пицца с Моцареллой, слабо-соленым лососем, тровожным сыром, рукколой и соусом «Песто»</p>
                     <div class="card__info">
                         <div class="money">550 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -296,7 +308,7 @@
                     <p class="info">Итальянская пицца с соусом «BBQ», куриным филе, свининой, беконом, тушеным луком и рукколой</p>
                     <div class="card__info">
                         <div class="money">430 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -307,7 +319,7 @@
                     <p class="info">Итальянская пицца с Моцареллой, шампиньонами, ветчиной и сыром Чеддер</p>
                     <div class="card__info">
                         <div class="money">350 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -318,7 +330,7 @@
                     <p class="info">Итальянская пицца с Моцареллой, итальянской салями, колбасой Бордо и помидорами черри</p>
                     <div class="card__info">
                         <div class="money">450 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -329,7 +341,7 @@
                     <p class="info">Итальянская пицца с помидорами черри, сыром Чеддер, анчоусами, маслинами и рукколой</p>
                     <div class="card__info">
                         <div class="money">420 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -340,7 +352,7 @@
                     <p class="info">Итальянская пицца с Моцареллой, свининой, копчеными колбасками, беконом и горчицей</p>
                     <div class="card__info">
                         <div class="money">420 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -351,7 +363,7 @@
                     <p class="info">Авторская пицца с курицей, шампиньонами, Моцареллой и соусом из белых грибов.</p>
                     <div class="card__info">
                         <div class="money">390 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -365,7 +377,7 @@
                     <p class="info">Итальянская паста с курицей, помидорами черри, Пармезаном и тимьяном в сливочно-томатном соусе</p>
                     <div class="card__info">
                         <div class="money">250 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -376,7 +388,7 @@
                     <p class="info">Острая итальянская паста с шампиньонами, томатами, перцем Чили, чесночным маслом и томатным соусом</p>
                     <div class="card__info">
                         <div class="money">220 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -387,7 +399,7 @@
                     <p class="info">Традиционная итальянская паста с цукини, лососем, сыром Пармезан и сливочным соусом</p>
                     <div class="card__info">
                         <div class="money">350 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -398,7 +410,7 @@
                     <p class="info">Традиционная итальянская паста с беконом, сливками, яичным желтком, сыром Пармезан и добавлением черного перца</p>
                     <div class="card__info">
                         <div class="money">250 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -409,7 +421,7 @@
                     <p class="info">Итальянская паста Фузилини со свининой, беконом, томатами, сыром Пармезан, соусами «BBQ» и томатным</p>
                     <div class="card__info">
                         <div class="money">250 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -423,7 +435,7 @@
                     <p class="info">Французский эклер со сливочно-банановым кремом и кокосом</p>
                     <div class="card__info">
                         <div class="money">210 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
@@ -434,17 +446,106 @@
                     <p class="info">Фирменный десерт из творожного сыра и сливок на песочном корже, покрытый пюре из маракуйи</p>
                     <div class="card__info">
                         <div class="money">210 ₽</div>
-                        <a href="" class="select_button">Выбрать ></a>
+                        <a href="#1" class="select_button">Выбрать ></a>
                     </div>
                 </div>
             </div>
         </div>
         </div>
     </section>
+    <!--Подвал страницы-->
+    <footer class="footer" id = "contacts">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <span class="icon-phone"></span>
+                    <div class="footer__text">89039027722</div>
+                </div>
+                <div class="footer__item">
+                    <span class="icon-clock"></span>
+                    <div class="footer__text">12:00 - 21:00</div>
+                </div>
+                <div class="footer__item">
+                    <a href="https://www.instagram.com/_tatatomato_/" target="_blank" class="footer__link"><span class="icon-insta"></span></a>
+                    <a href="https://vk.com/public185182681" target="_blank" class="footer__link"><span class="icon-vk"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--    Невидимый блок для всех пунктов меню, кроме пиццы, который выезжает при нажатии на кнопку выбрать-->
+    <div class="snack" id = "snackAnchor">
+        <div class="snack__inner">
+            <div class="snack__img"><img src="img/catalog/bryskettakapreze.jpg" alt="bresketakapreze"></div>
+            <div class="snack__text">
+                <div class="snack__title">Брускетта капрезе</div>
+                <div class="snack__description">Хлеб чиабатта, томаты, базилик, сливочная Моцарелла и соус «Песто»</div>
+            </div>
+            <div class="snack__price">
+               <div class="snack__info">
+                <div class="snack__cost">150 ₽</div>
+                <div class="snack__weight">120гр</div>
+                </div>
+                <a href="https://www.delivery-club.ru/srv/TATA_TOMATO_nsk" target="_blank" class="snack__button">Заказать</a>
+            </div>
+        </div>
+    </div>
+<!--    Невидимый блок для пункта пиццы, который выезжает при нажатии на кнопку выбрать-->    
+    <div class="pizza">
+       <div class="pizza__inner">
+           <span class="pizza__close"></span>
+           <div class="pizza__content">
+             <div class="pizza__img"><img src="img/catalog/pizzatatatomato.jpg" alt="pizzaTata"></div>
+              <div class="pizza__text">
+                   <div class="pizza__title">Пицца тата томато</div>
+                   <div class="pizza__description">Фирменная итальянская пицца с сыром Моцарелла и томатами</div>
+               </div>
+               <div class="pizza__info">
+                   <div class="pizza__cost">450 ₽</div>
+                   <div class="pizza__weight">500гр</div>
+                   <div class="pizza__size">30см</div>
+               </div>
+               <a href="https://www.delivery-club.ru/srv/TATA_TOMATO_nsk" target="_blank" class="snack__button pizza__button">Заказать</a>
+           </div>
+           <div class="pizza__option">
+               <h3>Добавки к пицце</h3>
+               <ul>
+                   <li>Моцарелла 30гр 50руб</li>
+                   <li>Чеддер 30гр 50руб</li>
+                   <li>Пармезан 10гр 50руб</li>
+                   <li>Салями 30гр 50руб</li>
+                   <li>Пепперони 30гр 50руб</li>
+                   <li>Курица BBQ 30гр 50руб</li>
+                   <li>Свинина BBQ 30гр 50руб</li>
+                   <li>Томатный соус 30гр 30руб</li>
+                   <li>Болгарский перец 30гр 30руб</li>
+                   <li>Помидор 30гр 30руб</li>
+                   <li>Шампиньоны 30гр 30руб</li>
+                   <li>Сливочный сыр 30гр 70руб</li>
+                   <li>Лосось 30гр 70руб</li>
+                   <li>Черри 30гр 30руб</li>
+               </ul>
+           </div>
+       </div>
+        
+    </div>
+<!--    Фон для невидимых блоков, при нажатии на фон закрывается блок и убирается этот фон-->
+    <div class="popup__bg"></div>
+    
+<!--  Типа экран загрузки  -->
+    <div class="preloader">
+    <div class="preloader__text">
+    <span class="preloader__animation"></span><br>Подождите<br><small>идет загрузка</small>
+    </div>
+    </div>
+
    </div>
+   <!--Подключения Jquery-->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<!--Также Jquery-->
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--Подключение Slick Slider-->
 <script type="text/javascript" src="assets/slick-1.8.11/slick-1.8.1/slick/slick.min.js"></script>
+<!--Наш скрипт файл-->
 <script src="js/script.js"></script>
 </body>
 </html>
