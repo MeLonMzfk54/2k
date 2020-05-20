@@ -1,4 +1,4 @@
-$(document).ready(function(){
+﻿$(document).ready(function(){
   $('.slider').slick({
       autoplay: 1,
       autoplaySpeed: 3000,
@@ -29,7 +29,7 @@ $(function() {
         animationSvg = preloader.find('.preloader__animation');
     animationSvg.fadeOut();
 //    $('*').animate({scrollTop:0},500);
-    preloader.delay(0).fadeOut("slow");
+    preloader.delay(1000).fadeOut("slow");
         
 });
 //Функция для стрелочки, которая поднимает страницу вверх 
